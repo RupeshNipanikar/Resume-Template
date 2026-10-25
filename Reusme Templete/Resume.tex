@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (modified for Rupesh Nipaanikar)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{3pt}}   % more space after each bullet
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small #1} & {\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2\\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=3pt]}   % aligned bullets
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}  % reduced space after lists
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Rupesh Radhakrishna Nipanikar} \\ \vspace{5pt}
+    \small
+    \href{tel:+917972861047}{+91-7972861047} \textbar \hspace{2pt}
+    \href{mailto:nipanikarrupesh@gmail.com}{nipanikarrupesh@gmail.com} \textbar \hspace{2pt}
+    \href{https://github.com/RupeshNipanikar}{github.com/RupeshNipanikar} \textbar \hspace{2pt}
+    \href{https://www.linkedin.com/in/rupesh-nipanikar/}{linkedin.com/Rupesh-Nipanikar}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Swami Vivekanand Institute of Polytechnic (SVIP)}{2020 -- 2023}
+    {B.Tech in Computer Science and Engineering}{CGPA: 7.97}
+    \resumeSubheading
+    {Tssm's Bhivarabai Sawant College of Engineering and Research}{2023 -- 2026}
+    {B.Tech in Computer Science and Engineering}{CGPA: 7.97}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeItemListStart
+    \resumeItem{\textbf{Programming Languages:} Java, Python, MySQL}
+    
+    \resumeItem{\textbf{Technical Skills:}  DSA,  Data Analytics, Full Stack Development (Frontend, Backend, Database, Deployemnt), Cloud Computing (AWS)}
+    \resumeItem{\textbf{Tools \& Visualization:} Power BI, DAX, RAG, LangChain, Scikit-learn, Pandas, NumPy, Matplotlib}
+    \vspace{-20pt}
+\resumeItemListEnd
+\vspace{5pt}
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+     {AI Animation Generator using Gemini and Manim}{Jan 2026}
+  {LLM Application Project}{}
+  \vspace{-3pt}
+  \resumeItemListStart
+    \resumeItem{Developed an AI-powered text-to-animation system that converts natural language prompts into executable Manim animations using Google's Gemini LLM and LangChain. } \vspace{-1pt}
+    \resumeItem{Engineered structured prompt templates and Pydantic-based output validation to generate reliable, error-free Python animation scripts. } \vspace{-1pt} 
+    \resumeItem{Automated the end-to-end workflow including code generation, script execution, video rendering, and playback within Google Colab.} \vspace{-1pt}
+    \resumeItem{Implemented layout and rendering constraints to ensure visually consistent, non-overlapping animations while adhering to Manim best practices.} \vspace{-3pt}
+  \resumeItemListEnd
+  \vspace{-6pt}
+    
+
+\resumeSubheading
+    {Pneumonia Detection Web Application — Chest Insight Project}{Apr 2025 -- May 2025}
+    {Healthcare AI Project}{}
+    \vspace{-3pt}
+    \resumeItemListStart
+      \resumeItem{Created  a convolutional neural network (CNN) model using pre-trained VGG16 architecture on 1000+ chest X-ray images} \vspace{-1pt}
+      \resumeItem{Developed a Streamlit-based web app that allows users to upload X-rays and receive real-time pneumonia detection results} \vspace{-1pt}
+      \resumeItem{Achieved classification accuracy of 90\%+ on validation datasets, demonstrating strong diagnostic potential} \vspace{-1pt}
+      \resumeItem{Designed a user-friendly interface for doctors and patients, enabling seamless image upload and presenting a definitive pneumonia detection result.} \vspace{-4pt}
+      
+    \resumeItemListEnd
+      \vspace{-3pt}
+
+\resumeSubheading
+  {Customer Churn Prediction —  Machine Learning, Streamlit}{Feb 2025}
+    {Predictive Modeling Project}{}
+    \vspace{-3pt}
+    \resumeItemListStart
+      \resumeItem{Performed data processing, cleaning, and feature engineering using pandas and NumPy on 5000+ customer datasets} \vspace{-1pt}
+      \resumeItem{Trained and evaluated multiple machine learning models including Logistic Regression, SVM and Random Forest using scikit-learn; Logistic Regression achieved the best prediction accuracy of 89.5\%} \vspace{-1pt}
+      \resumeItem{Built interactive churn insights visualizations with matplotlib and reduced prediction latency for faster decision-making   } \vspace{-1pt}
+      \resumeItem{Developed a Streamlit-based web application improving business planning speed through real-time insights   } \vspace{-3pt}
+    \resumeItemListEnd
+      
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+
+\resumeItemListStart
+  \vspace{-0.01pt}
+      \resumeItem{Full Stack Development (AI Engineering)}
+              \vspace{-0.1pt}
+      % \resumeItem{Ethnus –  Web Development Internship Training Certificate }
+      %   \vspace{-0.1pt}
+      
+\resumeItemListEnd
+\vspace{-15pt}
+
+%-----------LEADERSHIP / ACHIEVEMENTS-----------
+\section{Leadership / Achievements}
+\resumeItemListStart
+    \resumeItem{NSS Coordinator:  Coordinating student volunteers, Managed event coordination, volunteer participation, and communication to ensure smooth execution of NSS initiatives. }
+     \vspace{-0.1pt}
+   
+\resumeItemListEnd
+
+\end{document}
